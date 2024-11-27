@@ -1,7 +1,6 @@
 {
   "name": "rollup-plugin-dts-bundle-generator-2",
   "version": "0.0.0-development",
-  "private": true,
   "description": "",
   "keywords": [],
   "homepage": "https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2#readme",
