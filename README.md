@@ -24,14 +24,6 @@ A wrapper for [dts-bundle-generator](https://www.npmjs.com/package/dts-bundle-ge
 
 [Any donations would be much appreciated](./DONATIONS.md). 😄
 
-### Enterprise Users
-
-`rollup-plugin-dts-bundle-generator-2` is available as part of the [Tidelift Subscription](https://tidelift.com/funding/github/npm/rollup-plugin-dts-bundle-generator-2).
-
-Tidelift is working with the maintainers of `rollup-plugin-dts-bundle-generator-2` and a growing network of open source maintainers
-to ensure your open source software supply chain meets enterprise standards now and into the future.
-[Learn more.](https://tidelift.com/subscription/pkg/npm-rollup-plugin-dts-bundle-generator-2?utm_source=npm-rollup-plugin-dts-bundle-generator-2&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
-
 ## Installation
 
 ### npm

@@ -2,11 +2,6 @@
 
 Any donations would be much appreciated. 😄
 
-## Enterprise Users
-
-`__package_name__` is available as part of the
-[Tidelift Subscription](https://tidelift.com/funding/github/npm/__package_name__).
-
 ## Real money
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rebeccastevens)

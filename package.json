@@ -19,10 +19,6 @@
     {
       "type": "ko-fi",
       "url": "https://ko-fi.com/rebeccastevens"
-    },
-    {
-      "type": "tidelift",
-      "url": "https://tidelift.com/funding/github/npm/rollup-plugin-dts-bundle-generator-2"
     }
   ],
   "license": "BSD-3-Clause",
