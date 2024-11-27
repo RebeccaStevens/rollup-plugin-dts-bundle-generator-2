@@ -1,16 +1,16 @@
 {
-  "name": "__package_name__",
+  "name": "rollup-plugin-dts-bundle-generator-2",
   "version": "0.0.0-development",
   "private": true,
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/RebeccaStevens/template-typescript-node-package#readme",
+  "homepage": "https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2#readme",
   "bugs": {
-    "url": "https://github.com/RebeccaStevens/template-typescript-node-package/issues"
+    "url": "https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RebeccaStevens/template-typescript-node-package"
+    "url": "git+https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2"
   },
   "funding": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "type": "tidelift",
-      "url": "https://tidelift.com/funding/github/npm/__package_name__"
+      "url": "https://tidelift.com/funding/github/npm/rollup-plugin-dts-bundle-generator-2"
     }
   ],
   "license": "BSD-3-Clause",
