@@ -1,16 +1,23 @@
 // @ts-check
 import rsEslint from "@rebeccastevens/eslint-config";
 
-export default rsEslint({
-  projectRoot: import.meta.dirname,
-  mode: "library",
-  typescript: {
-    unsafe: "off",
+export default rsEslint(
+  {
+    projectRoot: import.meta.dirname,
+    mode: "library",
+    typescript: {
+      unsafe: "off",
+    },
+    formatters: true,
+    functional: "lite",
+    jsonc: true,
+    markdown: true,
+    stylistic: true,
+    yaml: true,
   },
-  formatters: true,
-  functional: "recommended",
-  jsonc: true,
-  markdown: true,
-  stylistic: true,
-  yaml: true,
-});
+  {
+    rules: {
+      "no-console": "off",
+    },
+  },
+);

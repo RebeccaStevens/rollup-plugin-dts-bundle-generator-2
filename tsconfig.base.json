@@ -28,7 +28,6 @@
     "sourceMap": false,
     "strict": true,
     "target": "ESNext",
-    "useUnknownInCatchVariables": true,
-    "types": ["vitest/importMeta"]
+    "useUnknownInCatchVariables": true
   }
 }

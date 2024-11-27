@@ -1,10 +1,9 @@
-import rollupPluginReplace from "@rollup/plugin-replace";
 import rollupPluginTypescript from "@rollup/plugin-typescript";
 import type { RollupOptions } from "rollup";
 import rollupPluginDeassert from "rollup-plugin-deassert";
-import { generateDtsBundle } from "rollup-plugin-dts-bundle-generator";
 
 import pkg from "./package.json" with { type: "json" };
+import generateDtsBundle from "./src";
 
 type PackageJSON = typeof pkg & {
   dependencies?: Record<string, string>;
@@ -13,7 +12,7 @@ type PackageJSON = typeof pkg & {
 
 const externalDependencies = [
   ...Object.keys((pkg as PackageJSON).dependencies ?? {}),
-  ...Object.keys((pkg as PackageJSON).peerDependencies ?? {}),
+  ...Object.keys((pkg as PackageJSON).peerDependencies),
 ];
 
 export default {
@@ -24,27 +23,11 @@ export default {
       file: pkg.exports.import,
       format: "esm",
       sourcemap: false,
-      plugins: [
-        generateDtsBundle({
-          compilation: {
-            preferredConfigPath: "tsconfig.build.json",
-          },
-          outFile: pkg.exports.types.import,
-        }) as any,
-      ],
     },
     {
       file: pkg.exports.require,
       format: "cjs",
       sourcemap: false,
-      plugins: [
-        generateDtsBundle({
-          compilation: {
-            preferredConfigPath: "tsconfig.build.json",
-          },
-          outFile: pkg.exports.types.require,
-        }) as any,
-      ],
     },
   ],
 
@@ -57,14 +40,11 @@ export default {
       },
       tsconfig: "tsconfig.build.json",
     }),
-    rollupPluginReplace({
-      values: {
-        "import.meta.vitest": "undefined",
-      },
-      preventAssignment: true,
-    }),
     rollupPluginDeassert({
       include: ["**/*.{js,ts}"],
+    }),
+    generateDtsBundle({
+      preferredConfigPath: "tsconfig.build.json",
     }),
   ],
 
