@@ -1,8 +1,12 @@
 {
   "name": "rollup-plugin-dts-bundle-generator-2",
   "version": "0.0.0-development",
-  "description": "",
-  "keywords": [],
+  "description": "A wrapper for dts-bundle-generator",
+  "keywords": [
+    "dts-bundle-generator",
+    "rollup",
+    "rollup-plugin"
+  ],
   "homepage": "https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2#readme",
   "bugs": {
     "url": "https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/issues"

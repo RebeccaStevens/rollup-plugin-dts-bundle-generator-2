@@ -14,6 +14,12 @@
 
 </div>
 
+A wrapper for [dts-bundle-generator](https://www.npmjs.com/package/dts-bundle-generator).
+
+## Difference between this and rollup-plugin-dts-bundle-generator
+
+`rollup-plugin-dts-bundle-generator-2` supports multiple entry points.
+
 ## Donate
 
 [Any donations would be much appreciated](./DONATIONS.md). 😄
