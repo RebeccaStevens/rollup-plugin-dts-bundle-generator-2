@@ -1,5 +1,5 @@
 {
-  "name": "@rebeccastevens/rollup-plugin-dts-bundle-generator",
+  "name": "@rebeccastevens/rollup-plugin-dts",
   "version": "0.0.0-development",
   "exports": "./src/index.ts",
   "publish": {
