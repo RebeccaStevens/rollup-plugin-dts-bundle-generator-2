@@ -3,7 +3,7 @@
 # Rollup Plugin dts Bundle Generator 2
 
 [![npm version](https://img.shields.io/npm/v/rollup-plugin-dts-bundle-generator-2.svg)](https://www.npmjs.com/package/rollup-plugin-dts-bundle-generator-2)
-[![jsr Version](https://img.shields.io/jsr/v/rollup-plugin-dts-bundle-generator-2.svg)](https://jsr.io/rollup-plugin-dts-bundle-generator-2)
+[![jsr Version](https://img.shields.io/jsr/v/@rebeccastevens/rollup-plugin-dts.svg)](https://jsr.io/@rebeccastevens/rollup-plugin-dts)
 [![CI](https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/actions/workflows/release.yml/badge.svg)](https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/actions/workflows/release.yml)
 [![Coverage Status](https://codecov.io/gh/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/branch/main/graph/badge.svg?token=MVpR1oAbIT)](https://codecov.io/gh/RebeccaStevens/rollup-plugin-dts-bundle-generator-2)\
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -46,11 +46,11 @@ bun add rollup-plugin-dts-bundle-generator-2
 
 ```sh
 # Install in a node project
-npx jsr add rollup-plugin-dts-bundle-generator-2
+npx jsr add @rebeccastevens/rollup-plugin-dts
 
 # Install in a deno project
-deno add jsr:rollup-plugin-dts-bundle-generator-2
+deno add jsr:@rebeccastevens/rollup-plugin-dts
 
 # Install in a bun project
-bunx jsr add rollup-plugin-dts-bundle-generator-2
+bunx jsr add @rebeccastevens/rollup-plugin-dts
 ```
