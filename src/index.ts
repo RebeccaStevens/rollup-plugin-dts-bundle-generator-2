@@ -2,10 +2,18 @@ import assert from "node:assert/strict";
 import * as fsp from "node:fs/promises";
 import * as path from "node:path";
 
-import { type CompilationOptions, type EntryPointConfig, generateDtsBundle } from "dts-bundle-generator";
+import {
+  type CompilationOptions,
+  type EntryPointConfig,
+  type OutputOptions,
+  generateDtsBundle,
+} from "dts-bundle-generator";
 import type { Plugin } from "rollup";
 
-export type Options = CompilationOptions;
+export type Options = {
+  compilation: CompilationOptions;
+  output: OutputOptions;
+};
 
 export default function rollupPlugin(options?: Options): Plugin {
   let mut_dts: Map<string, string> | undefined;
@@ -46,13 +54,14 @@ export default function rollupPlugin(options?: Options): Plugin {
       const entries = inputs.map(
         (input): EntryPointConfig => ({
           filePath: input,
+          output: options?.output ?? {},
         }),
       );
 
       mut_dts = new Map(
         zip(
           inputs.map((input) => path.resolve(input)),
-          generateDtsBundle(entries, options),
+          generateDtsBundle(entries, options?.compilation),
         ),
       );
     },
