@@ -23,6 +23,7 @@ export default {
       file: pkg.exports.import,
       format: "esm",
       sourcemap: false,
+      importAttributesKey: "with",
     },
     {
       file: pkg.exports.require,
@@ -44,7 +45,12 @@ export default {
       include: ["**/*.{js,ts}"],
     }),
     generateDtsBundle({
-      preferredConfigPath: "tsconfig.build.json",
+      compilation: {
+        preferredConfigPath: "tsconfig.build.json",
+      },
+      output: {
+        exportReferencedTypes: false,
+      },
     }),
   ],
 
@@ -56,7 +62,10 @@ export default {
   },
 
   external: (source) => {
-    if (source.startsWith("node:") || externalDependencies.some((dep) => source.startsWith(dep))) {
+    if (
+      source.startsWith("node:") ||
+      externalDependencies.some((dep) => dep === source || source.startsWith(`${dep}/`))
+    ) {
       return true;
     }
     return undefined;
