@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+# [2.0.0](https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/compare/v1.0.2...v2.0.0) (2024-12-14)
+
+
+### Features
+
+* allow specifying output options ([93d73e1](https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/commit/93d73e13d54379dbf62f3bacf9fb66f59f983837))
+
+
+### BREAKING CHANGES
+
+* CompilationOptions now need to be passed via the
+'compilation' subfield of the options object.
+
 ## [1.0.2](https://github.com/RebeccaStevens/rollup-plugin-dts-bundle-generator-2/compare/v1.0.1...v1.0.2) (2024-11-27)
 
 
