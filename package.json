@@ -90,7 +90,7 @@
     "@vitest/coverage-v8": "2.1.9",
     "@vitest/eslint-plugin": "1.1.11",
     "commitizen": "4.3.1",
-    "cspell": "8.17.5",
+    "cspell": "8.18.1",
     "cz-conventional-changelog": "3.3.0",
     "dts-bundle-generator": "9.5.1",
     "eslint": "9.21.0",
