@@ -93,7 +93,7 @@
     "cspell": "8.18.1",
     "cz-conventional-changelog": "3.3.0",
     "dts-bundle-generator": "9.5.1",
-    "eslint": "9.21.0",
+    "eslint": "9.23.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-flat-config-utils": "0.4.0",
     "eslint-import-resolver-typescript": "3.6.3",
