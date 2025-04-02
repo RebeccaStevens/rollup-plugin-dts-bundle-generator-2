@@ -22,7 +22,7 @@ importers:
         version: 1.2.3(eslint@9.23.0(jiti@2.4.2))
       '@rebeccastevens/eslint-config':
         specifier: 3.3.3
-        version: 3.3.3(679dae9af40abe7ac60b773d4f9a98d2)
+        version: 3.3.3(458f382cbd5d0c9042bdec36cc329896)
       '@rollup/plugin-typescript':
         specifier: 12.1.1
         version: 12.1.1(rollup@4.27.4)(tslib@2.6.3)(typescript@5.7.2)
@@ -84,8 +84,8 @@ importers:
         specifier: 10.1.1
         version: 10.1.1(eslint@9.23.0(jiti@2.4.2))
       eslint-flat-config-utils:
-        specifier: 0.4.0
-        version: 0.4.0
+        specifier: 2.0.1
+        version: 2.0.1
       eslint-import-resolver-typescript:
         specifier: 3.6.3
         version: 3.6.3(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2))(eslint-plugin-import-x@4.4.3(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2))(eslint-plugin-import@2.31.0)(eslint@9.23.0(jiti@2.4.2))
@@ -2710,8 +2710,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-flat-config-utils@0.4.0:
-    resolution: {integrity: sha512-kfd5kQZC+BMO0YwTol6zxjKX1zAsk8JfSAopbKjKqmENTJcew+yBejuvccAg37cvOrN0Mh+DVbeyznuNWEjt4A==}
+  eslint-flat-config-utils@2.0.1:
+    resolution: {integrity: sha512-brf0eAgQ6JlKj3bKfOTuuI7VcCZvi8ZCD1MMTVoEvS/d38j8cByZViLFALH/36+eqB17ukmfmKq3bWzGvizejA==}
 
   eslint-formatting-reporter@0.0.0:
     resolution: {integrity: sha512-k9RdyTqxqN/wNYVaTk/ds5B5rA8lgoAmvceYN7bcZMBwU7TuXx5ntewJv81eF3pIL/CiJE+pJZm36llG8yhyyw==}
@@ -4376,6 +4376,9 @@ packages:
 
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+
+  pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
@@ -6818,7 +6821,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rebeccastevens/eslint-config@3.3.3(679dae9af40abe7ac60b773d4f9a98d2)':
+  '@rebeccastevens/eslint-config@3.3.3(458f382cbd5d0c9042bdec36cc329896)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
@@ -6832,7 +6835,7 @@ snapshots:
       '@typescript-eslint/utils': 8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2)
       '@vitest/eslint-plugin': 1.1.11(@typescript-eslint/utils@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2))(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2)(vitest@2.1.9(@types/node@22.10.0))
       eslint-config-prettier: 10.1.1(eslint@9.23.0(jiti@2.4.2))
-      eslint-flat-config-utils: 0.4.0
+      eslint-flat-config-utils: 2.0.1
       eslint-formatting-reporter: 0.0.0(eslint@9.23.0(jiti@2.4.2))
       eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.29.0(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2))(eslint-plugin-import-x@4.4.3(eslint@9.23.0(jiti@2.4.2))(typescript@5.7.2))(eslint-plugin-import@2.31.0)(eslint@9.23.0(jiti@2.4.2))
       eslint-merge-processors: 0.1.0(eslint@9.23.0(jiti@2.4.2))
@@ -8194,9 +8197,9 @@ snapshots:
     dependencies:
       eslint: 9.23.0(jiti@2.4.2)
 
-  eslint-flat-config-utils@0.4.0:
+  eslint-flat-config-utils@2.0.1:
     dependencies:
-      pathe: 1.1.2
+      pathe: 2.0.3
 
   eslint-formatting-reporter@0.0.0(eslint@9.23.0(jiti@2.4.2)):
     dependencies:
@@ -10000,6 +10003,8 @@ snapshots:
   path-type@5.0.0: {}
 
   pathe@1.1.2: {}
+
+  pathe@2.0.3: {}
 
   pathval@2.0.0: {}
 
