@@ -94,7 +94,7 @@
     "cz-conventional-changelog": "3.3.0",
     "dts-bundle-generator": "9.5.1",
     "eslint": "9.23.0",
-    "eslint-config-prettier": "9.1.0",
+    "eslint-config-prettier": "10.1.1",
     "eslint-flat-config-utils": "0.4.0",
     "eslint-import-resolver-typescript": "3.6.3",
     "eslint-merge-processors": "0.1.0",
