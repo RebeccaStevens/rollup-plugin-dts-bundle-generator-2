@@ -22,7 +22,7 @@ importers:
         version: 1.2.3(eslint@9.36.0(jiti@2.4.2))
       '@rebeccastevens/eslint-config':
         specifier: 3.3.3
-        version: 3.3.3(748b87bd72bdcff394bff3d50b276207)
+        version: 3.3.3(9ce7189fe85c692cf47396d32546f16f)
       '@rollup/plugin-typescript':
         specifier: 12.1.1
         version: 12.1.1(rollup@4.27.4)(tslib@2.6.3)(typescript@5.7.2)
@@ -135,8 +135,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(eslint@9.36.0(jiti@2.4.2))
       eslint-plugin-unicorn:
-        specifier: 60.0.0
-        version: 60.0.0(eslint@9.36.0(jiti@2.4.2))
+        specifier: 61.0.2
+        version: 61.0.2(eslint@9.36.0(jiti@2.4.2))
       eslint-plugin-yml:
         specifier: 1.15.0
         version: 1.15.0(eslint@9.36.0(jiti@2.4.2))
@@ -2295,8 +2295,8 @@ packages:
     peerDependencies:
       eslint: ^8.0.0 || ^9.0.0
 
-  eslint-plugin-unicorn@60.0.0:
-    resolution: {integrity: sha512-QUzTefvP8stfSXsqKQ+vBQSEsXIlAiCduS/V1Em+FKgL9c21U/IIm20/e3MFy1jyCf14tHAhqC1sX8OTy6VUCg==}
+  eslint-plugin-unicorn@61.0.2:
+    resolution: {integrity: sha512-zLihukvneYT7f74GNbVJXfWIiNQmkc/a9vYBTE4qPkQZswolWNdu+Wsp9sIXno1JOzdn6OUwLPd19ekXVkahRA==}
     engines: {node: ^20.10.0 || >=21.0.0}
     peerDependencies:
       eslint: '>=9.29.0'
@@ -5279,7 +5279,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rebeccastevens/eslint-config@3.3.3(748b87bd72bdcff394bff3d50b276207)':
+  '@rebeccastevens/eslint-config@3.3.3(9ce7189fe85c692cf47396d32546f16f)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
@@ -5312,7 +5312,7 @@ snapshots:
       eslint-plugin-promise: 7.2.1(eslint@9.36.0(jiti@2.4.2))
       eslint-plugin-regexp: 2.7.0(eslint@9.36.0(jiti@2.4.2))
       eslint-plugin-sonarjs: 3.0.2(eslint@9.36.0(jiti@2.4.2))
-      eslint-plugin-unicorn: 60.0.0(eslint@9.36.0(jiti@2.4.2))
+      eslint-plugin-unicorn: 61.0.2(eslint@9.36.0(jiti@2.4.2))
       eslint-plugin-yml: 1.15.0(eslint@9.36.0(jiti@2.4.2))
       jsonc-eslint-parser: 2.4.0
       prettier: 3.4.1
@@ -6899,7 +6899,7 @@ snapshots:
       semver: 7.7.1
       typescript: 5.7.2
 
-  eslint-plugin-unicorn@60.0.0(eslint@9.36.0(jiti@2.4.2)):
+  eslint-plugin-unicorn@61.0.2(eslint@9.36.0(jiti@2.4.2)):
     dependencies:
       '@babel/helper-validator-identifier': 7.27.1
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.36.0(jiti@2.4.2))
