@@ -22,7 +22,7 @@ importers:
         version: 2.0.0(eslint@9.39.4(jiti@2.4.2))
       '@rebeccastevens/eslint-config':
         specifier: 3.3.3
-        version: 3.3.3(7113a40942723a53c3eb2579aefbb4e9)
+        version: 3.3.3(adfc0088b98806193738c52fddb2a28d)
       '@rollup/plugin-typescript':
         specifier: 12.1.1
         version: 12.1.1(rollup@4.59.0)(tslib@2.6.3)(typescript@5.7.2)
@@ -114,8 +114,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-n:
-        specifier: 17.14.0
-        version: 17.14.0(eslint@9.39.4(jiti@2.4.2))
+        specifier: 18.0.1
+        version: 18.0.1(eslint@9.39.4(jiti@2.4.2))(ts-declaration-location@1.0.7(typescript@5.7.2))(typescript@5.7.2)
       eslint-plugin-no-only-tests:
         specifier: 3.3.0
         version: 3.3.0
@@ -2482,11 +2482,18 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-n@17.14.0:
-    resolution: {integrity: sha512-maxPLMEA0rPmRpoOlxEclKng4UpDe+N5BJS4t24I3UKnN109Qcivnfs37KMy84G0af3bxjog5lKctP5ObsvcTA==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+  eslint-plugin-n@18.0.1:
+    resolution: {integrity: sha512-q3ARhk+eZRc7myR0KHx+R3/GJeOHF+Ir6PK95Pu2tEX8Sl/4BIpmmVLva2kPrjC2gCmn6WHlHm+3yeo6Rxhycw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
-      eslint: '>=8.23.0'
+      eslint: '>=8.57.1'
+      ts-declaration-location: ^1.0.6
+      typescript: '>=5.0.0'
+    peerDependenciesMeta:
+      ts-declaration-location:
+        optional: true
+      typescript:
+        optional: true
 
   eslint-plugin-no-only-tests@3.3.0:
     resolution: {integrity: sha512-brcKcxGnISN2CcVhXJ/kEQlNa0MEfGRtwKtWA16SkqXHKitaKIMrfemJKLKX1YqDU5C/5JY3PvZXd5jEW04e0Q==}
@@ -5596,7 +5603,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rebeccastevens/eslint-config@3.3.3(7113a40942723a53c3eb2579aefbb4e9)':
+  '@rebeccastevens/eslint-config@3.3.3(adfc0088b98806193738c52fddb2a28d)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
@@ -5622,7 +5629,7 @@ snapshots:
       eslint-plugin-jsonc: 3.1.2(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-jsx-a11y: 6.10.0(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-markdown: 5.1.0(eslint@9.39.4(jiti@2.4.2))
-      eslint-plugin-n: 17.14.0(eslint@9.39.4(jiti@2.4.2))
+      eslint-plugin-n: 18.0.1(eslint@9.39.4(jiti@2.4.2))(ts-declaration-location@1.0.7(typescript@5.7.2))(typescript@5.7.2)
       eslint-plugin-no-only-tests: 3.3.0
       eslint-plugin-optimize-regex: 1.2.1
       eslint-plugin-prettier: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@10.1.1(eslint@9.39.4(jiti@2.4.2)))(eslint@9.39.4(jiti@2.4.2))(prettier@3.4.1)
@@ -7181,7 +7188,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-n@17.14.0(eslint@9.39.4(jiti@2.4.2)):
+  eslint-plugin-n@18.0.1(eslint@9.39.4(jiti@2.4.2))(ts-declaration-location@1.0.7(typescript@5.7.2))(typescript@5.7.2):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.4.2))
       enhanced-resolve: 5.17.1
@@ -7189,9 +7196,12 @@ snapshots:
       eslint-plugin-es-x: 7.8.0(eslint@9.39.4(jiti@2.4.2))
       get-tsconfig: 4.10.0
       globals: 15.11.0
+      globrex: 0.1.2
       ignore: 5.3.2
-      minimatch: 9.0.5
       semver: 7.7.4
+    optionalDependencies:
+      ts-declaration-location: 1.0.7(typescript@5.7.2)
+      typescript: 5.7.2
 
   eslint-plugin-no-only-tests@3.3.0: {}
 
