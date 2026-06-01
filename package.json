@@ -134,5 +134,5 @@
   "peerDependencies": {
     "dts-bundle-generator": "^9.0.0"
   },
-  "packageManager": "pnpm@10.5.2"
+  "packageManager": "pnpm@11.5.0"
 }
