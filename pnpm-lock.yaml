@@ -22,7 +22,7 @@ importers:
         version: 2.0.0(eslint@9.39.4(jiti@2.4.2))
       '@rebeccastevens/eslint-config':
         specifier: 3.3.3
-        version: 3.3.3(b2a77f4bc0cfa7cef1e04529fc110fa9)
+        version: 3.3.3(c95b7e32bba247b5533f5e57cece49cf)
       '@rollup/plugin-typescript':
         specifier: 12.1.1
         version: 12.1.1(rollup@4.59.0)(tslib@2.6.3)(typescript@5.7.2)
@@ -99,8 +99,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-functional:
-        specifier: 9.0.1
-        version: 9.0.1(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
+        specifier: 10.0.0
+        version: 10.0.0(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
       eslint-plugin-import-x:
         specifier: 4.4.3
         version: 4.4.3(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
@@ -2187,8 +2187,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  deepmerge-ts@7.1.3:
-    resolution: {integrity: sha512-qCSH6I0INPxd9Y1VtAiLpnYvz5O//6rCfJXKk0z66Up9/VOSr+1yS8XSKA5IWRxjocFGlzPyaZYe+jxq7OOLtQ==}
+  deepmerge-ts@7.1.5:
+    resolution: {integrity: sha512-HOJkrhaYsweh+W+e74Yn7YStZOilkoPb6fycpwNLKzSPtruFs48nYis0zy5yJz1+ktUhHxoRDJ27RQAWLIJVJw==}
     engines: {node: '>=16.0.0'}
 
   defaults@1.0.4:
@@ -2448,11 +2448,11 @@ packages:
     peerDependencies:
       eslint: ^8.40.0 || ^9.0.0 || ^10.0.0
 
-  eslint-plugin-functional@9.0.1:
-    resolution: {integrity: sha512-FR9b/LH2ODuGURSjGlAiEn5LkK+Bumwo0mZHmcSB3SDXCmzQfhcnLCTXL69p/jElWEASSRe4rmarfhHLhAnbXw==}
-    engines: {node: '>=v18.18.0'}
+  eslint-plugin-functional@10.0.0:
+    resolution: {integrity: sha512-D/BWdGUvPz5uIC+kZM1BWrELhjHpDiYxIYjzF7a6TZ62KINajjKgOiSYGbGv4fpMT1enEC9yG+0kOaIRTZzpTg==}
+    engines: {node: '>=v20.0.0'}
     peerDependencies:
-      eslint: ^9.0.0
+      eslint: ^9.0.0 || ^10.0.0
       typescript: '>=4.7.4'
     peerDependenciesMeta:
       typescript:
@@ -5616,7 +5616,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rebeccastevens/eslint-config@3.3.3(b2a77f4bc0cfa7cef1e04529fc110fa9)':
+  '@rebeccastevens/eslint-config@3.3.3(c95b7e32bba247b5533f5e57cece49cf)':
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@clack/prompts': 0.7.0
@@ -5636,7 +5636,7 @@ snapshots:
       eslint-merge-processors: 2.0.0(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-eslint-comments: 3.2.0(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-format: 2.0.1(eslint@9.39.4(jiti@2.4.2))
-      eslint-plugin-functional: 9.0.1(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
+      eslint-plugin-functional: 10.0.0(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
       eslint-plugin-import-x: 4.4.3(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
       eslint-plugin-jsdoc: 63.0.1(eslint@9.39.4(jiti@2.4.2))
       eslint-plugin-jsonc: 3.1.2(eslint@9.39.4(jiti@2.4.2))
@@ -6757,7 +6757,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  deepmerge-ts@7.1.3: {}
+  deepmerge-ts@7.1.5: {}
 
   defaults@1.0.4:
     dependencies:
@@ -7089,10 +7089,10 @@ snapshots:
       prettier: 3.8.1
       synckit: 0.11.12
 
-  eslint-plugin-functional@9.0.1(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2):
+  eslint-plugin-functional@10.0.0(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2):
     dependencies:
       '@typescript-eslint/utils': 8.62.1(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
-      deepmerge-ts: 7.1.3
+      deepmerge-ts: 7.1.5
       escape-string-regexp: 5.0.0
       eslint: 9.39.4(jiti@2.4.2)
       is-immutable-type: 5.0.1(eslint@9.39.4(jiti@2.4.2))(typescript@5.7.2)
