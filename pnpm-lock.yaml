@@ -17,6 +17,9 @@ importers:
       '@cspell/dict-cryptocurrencies':
         specifier: 5.0.3
         version: 5.0.3
+      '@eslint-community/eslint-plugin-eslint-comments':
+        specifier: 3.2.0
+        version: 3.2.0(eslint@9.39.5(jiti@2.4.2))
       '@eslint/compat':
         specifier: 2.0.0
         version: 2.0.0(eslint@9.39.5(jiti@2.4.2))
@@ -92,9 +95,6 @@ importers:
       eslint-merge-processors:
         specifier: 2.0.0
         version: 2.0.0(eslint@9.39.5(jiti@2.4.2))
-      eslint-plugin-eslint-comments:
-        specifier: 3.2.0
-        version: 3.2.0(eslint@9.39.5(jiti@2.4.2))
       eslint-plugin-format:
         specifier: 2.0.1
         version: 2.0.1(eslint@9.39.5(jiti@2.4.2))
@@ -732,6 +732,12 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@eslint-community/eslint-plugin-eslint-comments@3.2.0':
+    resolution: {integrity: sha512-BjyMKQRjkywhbkrtHzUITQTQQuysxbZk1/z5Cco7cMNxhw0odzWohDgVuxmuhS9LJRFWAkIXhnfuLXjChFmfoA==}
+    engines: {node: '>=6.5.0'}
+    peerDependencies:
+      eslint: '>=4.19.1'
 
   '@eslint-community/eslint-utils@4.9.1':
     resolution: {integrity: sha512-phrYmNiYppR7znFEdqgfWHXR6NCkZEK7hwWDHZUjit/2/U0r6XvkDl0SYnoM51Hq7FhCGdLDT6zxCCOY1hexsQ==}
@@ -5321,6 +5327,12 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@eslint-community/eslint-plugin-eslint-comments@3.2.0(eslint@9.39.5(jiti@2.4.2))':
+    dependencies:
+      escape-string-regexp: 1.0.5
+      eslint: 9.39.5(jiti@2.4.2)
+      ignore: 5.3.2
+
   '@eslint-community/eslint-utils@4.9.1(eslint@9.39.5(jiti@2.4.2))':
     dependencies:
       eslint: 9.39.5(jiti@2.4.2)
@@ -7052,6 +7064,7 @@ snapshots:
       escape-string-regexp: 1.0.5
       eslint: 9.39.5(jiti@2.4.2)
       ignore: 5.3.2
+    optional: true
 
   eslint-plugin-format@2.0.1(eslint@9.39.5(jiti@2.4.2)):
     dependencies:
